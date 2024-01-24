@@ -1,6 +1,6 @@
 # import the following functionalities and libraries to successfully run this script
 import requests
-from bs4 import BeatifulSoup
+from bs4 import BeautifulSoup
 import threading
 import argparse
 import sys
@@ -29,7 +29,7 @@ def scan_directory(directory, target_url, quiet_mode, log_file):
                 logging.info(f"Found: {url}")
             elif response.status_code == 404:
                 if not quiet_mode:
-                    print{f"Not Found: {url}"}
+                    print(f"Not Found: {url}")
                     logging.info(f"Not FOund: {url}")
             else:
                 if not quiet_mode: 
@@ -46,7 +46,7 @@ def main():
     """
 
     #set up argument parser
-    parser = argparse.ArgumentParser(description='Directory Buster Script for Educational Purposes')
+    parser = argparse.ArgumentParser(description='Directory Buster Script for Educational Purposes by user @b-obby on GitHub')
     parser.add_argument('target_url', help='Target URL to Scan')
     parser.add_argument('wordlist_path', help='Path to wordlist file')
     parser.add_argument('--threads', type=int, default=1, help='Number of Threads (Default: 1)')
@@ -81,5 +81,5 @@ def main():
     for threads in threads:
         thread.join()
 
-if __name__ == "__main__"
+if __name__ == "__main__":
     main()
