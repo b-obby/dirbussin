@@ -28,9 +28,7 @@ def scan_directory(directory, target_url, quiet_mode, log_file):
             if not quiet_mode:
                 logging.info(f"Found: {url}")
             elif response.status_code == 404:
-                if not quiet_mode:
-                    print(f"Not Found: {url}")
-                    logging.info(f"Not FOund: {url}")
+                pass # do not report that we couldn't find a directory for the word. The response would be massive depending on how big our wordlist is  
             else:
                 if not quiet_mode: 
                         print(f"Error ({response.status_code}): {url}")
