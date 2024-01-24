@@ -13,9 +13,11 @@ The following must be imported for this script to be successful
 
 Executing the script
 To strengthen the user-experience, users are able to include some command line arguments
-* Number of Threads: `--threads <number of threads>`
-* Quiet Mode - `--quiet`
+* Adjust Number of Threads: `--threads <number of threads>`
+* Quiet Mode - `--quiet` Does not print results in the terminal / CLI. 
 * File Logging - `--log_file <file name>`
+
+> It is reccomended that Quiet mode is used in tandem with creating a log file, as you would not be able to see results otherwise.
 
 The following is an example of what a full command line argument looks like
 
