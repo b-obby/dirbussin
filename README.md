@@ -7,7 +7,7 @@ The following must be imported for this script to be successful
 * `requests` - enabling HTTP requests
 * `BeautifulSoup` - html parsing libary: pulls XML / HTML data from webpages
 * `threading` - enables multi-threading to help the script run faster
-* `argparse` - enables user friendly interactions, enabling the user to include parameters when executing dirbussin.py
+* `argparse` - enables user friendly interactions, enabling the user to include parameters or use -help for further information 
 * `sys` - checks for command-line arguments
 * `logging` - allows the user to export results as file
 
