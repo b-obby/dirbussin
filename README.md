@@ -1,9 +1,9 @@
 # dirbussin
-a script to brute force a web application's directory
+A script to brute force a web application's directory. A wordlist is not included (for now) but there are plenty of open source options available online.
 
-As a future penetration tester, it is very likely that I will encounter an instance where I must attempt to enumerate the directory for a web application. I have created a script that automates this process. This is a much simpler version than the popular DirBuster / GoBuster
+This is a simplified version of dirbuster I have developed to practice my proficiency in Python programming.
 
-The following must be imported for this script to be successful
+### The following functions and libraries must be imported for this script to work
 * `requests` - enabling HTTP requests
 * `BeautifulSoup` - html parsing libary: pulls XML / HTML data from webpages
 * `threading` - enables multi-threading to help the script run faster
@@ -11,7 +11,7 @@ The following must be imported for this script to be successful
 * `sys` - checks for command-line arguments
 * `logging` - allows the user to export results as file
 
-Executing the script
+### Executing the script
 To strengthen the user-experience, users are able to include some command line arguments
 * Adjust Number of Threads: `--threads <number of threads>`
 * Quiet Mode - `--quiet` Does not print results in the terminal / CLI. 
