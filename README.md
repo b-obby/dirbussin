@@ -1,7 +1,7 @@
 # dirbussin
 A script to brute force a web application's directory. A wordlist is not included (for now) but there are plenty of open source options available online.
 
-This is a simplified version of dirbuster I have developed to practice my proficiency in Python programming.
+This is a MUCH simpler version of dirbuster I have created to practice my proficiency in Python.
 
 ### The following functions and libraries must be imported for this script to work
 * `requests` - enabling HTTP requests
